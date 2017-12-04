@@ -1,1 +1,1 @@
-web gunicorn newspaper_api:app
+web: gunicorn newspaper_api:app
