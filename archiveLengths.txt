@@ -1,0 +1,11 @@
+takvim, sabah, fotomaç
+1 ay
+
+dailysabah
+1 gün
+
+milliyet
+1 ocak 2009+
+
+"turkiye","hurriyet","yenisafak","star","aksam","birgun"
+ilk sayfa
