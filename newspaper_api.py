@@ -37,13 +37,13 @@ def fotomac():
     page=request.args.get('page', default = '1')
     return getFotoMac(date, page)
 
-@app.route('/dailySabah')
+@app.route('/dailysabah')
 def dailySabah():
     date=request.args.get('date')
     page=request.args.get('page', default = '1')
     return getDailySabah(date, page)
 
-@app.route('/yeniAsir')
+@app.route('/yeniasir')
 def yeniAsir():
     date=request.args.get('date')
     page=request.args.get('page', default = '1')
