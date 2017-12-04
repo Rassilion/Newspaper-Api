@@ -1,13 +1,33 @@
-from flask import Flask
+from flask import Flask, request, jsonify
+from newspapers import *
 
 app = Flask(__name__)
 
-newspaperlist=["milliyet"]
+newspaperlist=["milliyet","sabah","takvim"]
+
+@app.route('/newspapers')
+def summary():
+    return jsonify(newspaperlist)
 
 
 @app.route('/')
 def hello_world():
-    return 'Hello World!'
+    return "herald webapi"
+
+@app.route('/milliyet')
+def milliyet():
+    date=request.args.get('date')
+    return getMilliyet(date)
+
+@app.route('/sabah')
+def sabah():
+    date=request.args.get('date')
+    return getSabah(date)
+
+@app.route('/takvim')
+def takvim():
+    date=request.args.get('date')
+    return getTakvim(date)
 
 
 if __name__ == '__main__':
