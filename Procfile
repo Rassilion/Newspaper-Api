@@ -1,1 +1,1 @@
-worker: python newspaper_api.py
+web gunicorn newspaper_api:app
