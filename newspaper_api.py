@@ -7,7 +7,7 @@ newspaperlist=["milliyet","sabah","takvim"]
 
 @app.route('/newspapers')
 def summary():
-    return jsonify(newspaperlist)
+    return jsonify({"newspapers":newspaperlist})
 
 
 @app.route('/')
